@@ -1,0 +1,429 @@
+ @import url('http://fonts.googleapis.com/css2? family=poppins:wght@300;400;500;600;700;800;900& display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+body
+{
+
+     background-color: rgb(255, 240, 243);
+     margin: 10px 0 100px;
+     height: 100vh; 
+    color: whitesmoke;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 40px;
+    color: pink;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content:  '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards ;
+    animation-delay: 2s;
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+
+.navbar a{
+    font-size: 18px;
+    color: whitesmoke;
+    margin-left: 50%;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.navbar a:hover{
+    color: pink;
+}
+
+.navbar a.active{
+    color: pink;
+}
+.home{
+    background-image: url("s4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: pink;
+    line-height: 1.2;
+
+}
+.home-content h3{
+    font-size: 40px;
+}
+.home-content p{
+    font-size: 20px;
+    color: white;
+    margin: 20px 0 40px;
+}
+.home-content h6{
+    font-size: 15px;
+    font-style: italic;
+    color: pink;
+}
+
+.About {
+    
+    background-size: cover;
+    width: 100%;
+    margin: 50px 0 100px;
+   
+}
+.About h2{
+    font-size: 80px;
+    color: plum;
+    padding: 90px 0;
+    margin-left: 38%;
+   
+}
+.me{
+    position: absolute;
+    align-items: center;
+    width: 15%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    padding: 10px 10px;
+
+}
+.meover{
+    position: absolute;
+    align-items: center;
+    width: 15%;
+    height: 310px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background: transparent;
+    transition: 5s;
+}
+.meover:hover{
+    background-image: url(t2.jpg);
+    background-size: cover;   
+}
+.About p{
+    color: rgb(114, 198, 226);
+    font-size: 25px;
+    padding: 30px 5%;
+    font-weight: 40%;
+    font-style: bold;
+    margin-left: 35%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    align-items: center;
+    display: inline-block;
+    width: 800px;
+}
+.About p:hover {
+    transform: scale(1.05);
+    background-image: url(c6.jpg); 
+    background-size: cover;
+    color:navy;
+}
+
+.skills{
+    margin: 20px 0 20px;
+    background-image: url(SK1.jpg);
+    background-size: cover;
+    height: 800PX;
+}
+.skills h2{
+
+    font-size: 80px;
+    color: white;
+    padding: 85px 0;
+    align-items: center;
+    display: inline-block;
+    
+}
+.skills ul{
+    position: relative;
+    font-size: 30px;
+    color: rgb(238, 213, 255);
+    font-weight: 40%;
+    font-display: center;
+    font-style: bold;
+    margin-left: 500px;
+    padding: 10px ;
+    border-radius: 5px;
+    display: inline-block;
+    width: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.skills ul:hover {
+    transform: scale(1.05);
+    background-color: rgb(238, 213, 255); 
+    background-size: cover;
+    color: purple;
+}
+.projects {
+    
+    background-size: auto;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.heading{
+    color: purple;
+    font-size: 80px;
+    padding: 85px;
+    font-style: oblique ;
+}
+
+
+
+.project-card {
+    background-color: rgb(255, 227, 232);
+    border: 2px solid purple;
+    border-radius: 8px;
+    padding: 10px 5px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px purple;
+    width: 300px;
+    height: 200px;
+    color: palevioletred;
+}
+.project-card p{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.project-card a{
+    font-size: 50px;
+    color:  rgb(255, 227, 232);
+    margin-left: 20px;
+} 
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-image: url(c7.jpg);
+    background-size: cover;
+    color: transparent;
+}
+.project-card h6{
+    font-size: 20px;
+    color:  rgb(255, 227, 232);
+    margin-left: 20px;
+}
+  
+.project-card-a {
+    background-color: rgb(255, 227, 232);
+    border: 2px solid purple;
+    border-radius: 8px;
+    padding: 10px 5px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px purple;
+    width: 300px;
+    height: 200px;
+    color: palevioletred;
+}
+.project-card-a p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.project-card-a a{
+    font-size: 50px;
+    color:  rgb(255, 227, 232);
+    margin-left: 35px;
+    
+} 
+.project-card-a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-image: url(c7.jpg);
+    background-size: cover;
+    color: transparent;
+    
+}
+.project-card-a h6{
+    font-size: 20px;
+    color:  rgb(255, 227, 232);
+    margin-left: 40px;
+}
+  
+.project-card-b {
+    background-color: rgb(255, 227, 232);
+    border: 2px solid purple;
+    border-radius: 8px;
+    padding: 10px 5px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px purple ;
+    width: 300px;
+    height: 200px;
+    color: palevioletred;
+}
+.project-card-b p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.project-card-b a{
+    font-size: 50px;
+    color:  rgb(255, 227, 232);
+    margin-left: 3px;
+    
+} 
+.project-card-b:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-image: url(c7.jpg);
+    background-size: cover;
+    color: transparent;
+    
+}
+.project-card-b h6{
+    font-size: 20px;
+    color:  rgb(255, 227, 232);
+    margin-left: 20px;
+}
+.contact{
+    position: relative;
+    top: 45px;
+    bottom: 30px;
+    width: 50%;
+    margin: 20px 0 20px;
+    background-color: black;
+    justify-content: space-between;
+    padding: 35.8px;
+  
+}
+.contact h2{
+    font-size: 70px;
+    font-style: bold;
+    color: pink; 
+    padding: 20px; 
+}
+.contact a{
+    color: plum;
+    display: inline;
+    font-size: 25px;
+    justify-content: space-between;
+}
+.contact p{
+    display: inline;
+    font-size: 30px;
+    justify-content: space-between;
+}
+.contact i{
+    display: flex;
+    
+}
+form{
+    width:900px;
+    background-color:pink;
+    margin-left: 92.2%;
+    bottom: 0px;
+    position: absolute;
+    padding-left: 0px;
+    
+   
+}
+    
+.info-box {
+    display: flex;
+    padding: 20px 20px;
+}
+input[type="text"],
+input[type="email"] {
+    
+    color: black;
+    width: 350px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 89px;
+    margin-bottom: 30px;
+}
+textarea{
+    width: 725px;
+    height: 200px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+button
+{
+    background-color:black;
+    color: pink;
+    width: 200px;
+    height: 50px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.dlink{
+    display: flex;
+    position: absolute;
+    background-color:black;
+    width: 200px;
+    height: 50px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    bottom: 0px;
+    border-radius: 10px;
+    
+}
+.dlink a{
+    color: pink;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.dlink i{
+    font-size: 30px;
+    margin-top: 5px;
+}  
+.button {
+    animation: pulse 1.5s infinite;
+}
+
